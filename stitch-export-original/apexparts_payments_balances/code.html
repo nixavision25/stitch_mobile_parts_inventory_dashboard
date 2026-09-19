@@ -1,0 +1,628 @@
+<!DOCTYPE html><html lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-surface-variant":"#3e4947","secondary-fixed":"#dae2fd","surface-container-highest":"#d3e4fe","on-secondary-container":"#5c647a","on-error":"#ffffff","on-secondary-fixed-variant":"#3f465c","surface-dim":"#cbdbf5","outline-variant":"#bdc9c6","secondary-fixed-dim":"#bec6e0","surface-container-low":"#eff4ff","inverse-on-surface":"#eaf1ff","on-background":"#0b1c30","on-surface":"#0b1c30","error":"#ba1a1a","inverse-surface":"#213145","inverse-primary":"#80d5cb","tertiary-fixed":"#ffdcc3","surface-bright":"#f8f9ff","on-tertiary-container":"#ffe6d5","primary":"#005c55","secondary-container":"#dae2fd","primary-fixed-dim":"#80d5cb","surface-variant":"#d3e4fe","background":"#f8f9ff","surface-container":"#e5eeff","on-secondary":"#ffffff","on-tertiary-fixed-variant":"#6e3900","tertiary-container":"#a15600","secondary":"#565e74","on-primary-fixed-variant":"#00504a","tertiary-fixed-dim":"#ffb77d","on-tertiary-fixed":"#2f1500","on-secondary-fixed":"#131b2e","error-container":"#ffdad6","on-error-container":"#93000a","surface-tint":"#006a63","on-tertiary":"#ffffff","surface-container-high":"#dce9ff","outline":"#6e7977","surface":"#f8f9ff","primary-fixed":"#9cf2e8","surface-container-lowest":"#ffffff","on-primary":"#ffffff","primary-container":"#0f766e","tertiary":"#7d4200","on-primary-container":"#a3faef","on-primary-fixed":"#00201d"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-md":"1rem","space-xl":"2.25rem","space-xs":"0.25rem",gutter:"1.25rem","space-sm":"0.5rem","margin-mobile":"1rem","gutter-mobile":"0.75rem","space-lg":"1.5rem",margin:"2rem"},fontFamily:{"label-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"metric-display":["Plus Jakarta Sans"],"metric-display-mobile":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"]},fontSize:{"label-lg":["14px",{lineHeight:"20px",fontWeight:"600"}],"headline-md":["20px",{lineHeight:"28px",fontWeight:"600"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"headline-lg":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-xl":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"body-sm":["13px",{lineHeight:"18px",fontWeight:"400"}],"headline-sm":["16px",{lineHeight:"24px",fontWeight:"600"}],"metric-display":["28px",{lineHeight:"36px",fontWeight:"700"}],"metric-display-mobile":["22px",{lineHeight:"28px",fontWeight:"700"}],"headline-xl-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"700"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"600"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface"><aside class="hidden lg:flex fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="p-space-lg flex items-center gap-space-sm bg-surface-container-low"><img alt="ApexParts Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VapNDE3swVySvVtyUXSh8iLpgRTWUc1ADWRdBefkK2B2FUmCqInkoD8Pvei9YgKRklqH1ZdjAQkwcR4x5PHVvMEqjugv-vfu8IoRD0-dGcw7w7NtXcVlBG0Q8TJccCGV1qBtSYdGTTuwnwgVB3K0MmSRgXx4hrVjRvTVG095aA_oTBEfdar4BBHEVBldqDZ_MNbRtnr-TCmYTLdX1nFl57tpEVUPiXy-mWLx6nfzcOxBjrUa2MLlO9GlMx"><div><div class="font-headline-sm text-headline-sm text-on-surface">ApexParts</div><div class="font-label-sm text-label-sm text-on-surface-variant">Central Warehouse &amp; 2 Retail Shops</div></div></div><nav class="flex flex-col gap-space-xs p-space-md" data-active-classes="bg-primary-container text-on-primary-container font-label-lg rounded-xl"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-primary">dashboard</span><span class="font-label-lg text-label-lg">Dashboard</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="inventory" href="#"><span class="material-symbols-outlined text-primary">inventory_2</span><span class="font-label-lg text-label-lg">Inventory</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm transition-colors bg-primary-container text-on-primary-container font-label-lg rounded-xl" data-path="payments" href="#"><span class="material-symbols-outlined text-primary">payments</span><span class="font-label-lg text-label-lg">Payments</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="reports" href="#"><span class="material-symbols-outlined text-primary">bar_chart</span><span class="font-label-lg text-label-lg">Reports</span></a></nav></div><div class="p-space-md flex flex-col gap-space-sm bg-surface-container-low"><div class="flex items-center gap-space-sm bg-surface-container-lowest p-space-sm rounded-xl"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2mnYPmqN4ZFQvvjIWdnQggXwNWmY110FjTWOJzw-cs2c05W7uMJantTSqDXc-5BREm6s9zqtQ8cEVTQffH_3LhVS5ahFF5FPVf4LOQceUPFvn2MH5qORX1Sez_kfDaD2YaYa8xx9if08vjWLclEmr9Ngm-s7A58aMoIBmWvB3Mw4itpZhhWkmMa-aJvMsfSEZxNOz8oBceORrnumajKJ8h6dFYR5oUC74OUQiqPRBeX0OZD_ikvnNkg"><div class="flex-1 min-w-0"><div class="font-label-md text-label-md text-on-surface truncate">Rashid Khan (Owner)</div><div class="flex items-center gap-1.5 font-label-sm text-label-sm text-primary"><span class="w-2 h-2 rounded-full bg-primary inline-block"></span><span class="truncate">Online - Warehouse Hub</span></div></div></div><a class="flex items-center justify-center gap-space-xs py-space-sm px-space-md rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors font-label-md text-label-md" href="tel:028842100"><span class="material-symbols-outlined text-base">support_agent</span>Help &amp; Phone Support</a></div></aside><div class="w-full pl-0 lg:pl-72 transition-all"><header class="fixed top-0 left-0 lg:left-72 right-0 h-16 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-3 sm:px-space-lg"><div class="flex items-center gap-space-md"><div class="flex lg:hidden items-center gap-2 pr-2 border-r border-outline-variant/30"><span class="material-symbols-outlined text-primary text-xl">payments</span><span class="font-headline-sm text-headline-sm text-on-surface">ApexParts</span></div><div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface"><span class="material-symbols-outlined text-primary text-base">calendar_today</span><span class="">Today: Tuesday, Oct 24 • All locations open</span></div><div class="hidden xl:flex items-center gap-space-xs"><span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm"><span class="w-2 h-2 rounded-full bg-primary"></span>Central Warehouse (Active)</span><span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm"><span class="w-2 h-2 rounded-full bg-primary"></span>Shop 1 - Downtown (Active)</span><span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm"><span class="w-2 h-2 rounded-full bg-primary"></span>Shop 2 - Metro Mall (Active)</span></div></div><div class="flex items-center gap-space-sm"><div class="flex items-center gap-space-xs bg-surface-container-high px-space-md py-space-xs rounded-xl font-label-md text-label-md text-on-surface"><span class="material-symbols-outlined text-primary text-base">call</span><span class="">Support Hotline: (02) 884-2100</span></div></div></header><main class="relative pt-16 bg-surface min-h-screen p-3 sm:p-space-md lg:p-space-lg pb-20 lg:pb-space-lg"><div class="flex flex-col w-full">
+<div class="flex flex-col gap-space-lg w-full max-w-[1440px] mx-auto pb-space-xl">
+<!-- Top Action Header -->
+<div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-2xl">account_balance_wallet</span>
+<h1 class="font-headline-xl text-headline-xl text-on-surface">Client Payments &amp; Balances</h1>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          See who owes money, how late their payments are, and send instant WhatsApp reminders with one click.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm self-start lg:self-center">
+<button class="flex items-center gap-space-xs bg-primary text-on-primary hover:bg-primary-container px-space-md py-3 rounded-lg shadow-sm transition-all active:scale-[0.99] cursor-pointer" onclick="openPaymentModal()"><span class="material-symbols-outlined text-lg">add_circle</span>
+<span class="font-label-lg text-label-lg">+ Record New Cash, EasyPaisa / Bank Transfer</span></button>
+</div>
+</div>
+<!-- Summary KPI Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Card 1: Total Receivable -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden"><div class="absolute -right-4 -bottom-4 w-28 h-28 rounded-full bg-surface-container-low opacity-60 pointer-events-none"></div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md text-on-surface-variant tracking-wider uppercase">Total Money Owed to You (Receivable / Khata)</span>
+<span class="material-symbols-outlined text-on-surface-variant">receipt_long</span>
+</div>
+<div class="flex flex-col my-1">
+<div class="font-headline-xl text-[36px] leading-[44px] font-bold text-on-surface">Rs. 4,635,000</div>
+<div class="flex items-center gap-1.5 mt-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="w-2 h-2 rounded-full bg-primary inline-block"></span>
+<span class="">Across 24 wholesale repair shop accounts</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-4 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 72%"></div>
+</div></div>
+<!-- Card 2: Overdue Attention -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden bg-gradient-to-br from-surface-container-lowest via-surface-container-lowest to-error-container/20"><div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md text-error tracking-wider uppercase">Overdue Payments (Urgent Khata)</span>
+<span class="inline-flex items-center gap-1 bg-error-container text-on-error-container font-label-md text-label-md px-2.5 py-0.5 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-error inline-block"></span>
+            4 Clients
+          </span>
+</div>
+<div class="flex flex-col my-1">
+<div class="font-headline-xl text-[36px] leading-[44px] font-bold text-error">Rs. 1,248,000</div>
+<div class="flex items-center gap-1 mt-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-error text-base">warning</span>
+<span class="">Past agreed 14-day wholesale credit terms</span>
+</div>
+</div>
+<div class="w-full bg-error-container h-1.5 rounded-full mt-4 overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 38%"></div>
+</div></div>
+<!-- Card 3: Due This Week -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden bg-gradient-to-br from-surface-container-lowest via-surface-container-lowest to-secondary-container/30"><div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md text-on-surface-variant tracking-wider uppercase">Due This Week</span>
+<span class="inline-flex items-center gap-1 bg-secondary-container text-on-secondary-fixed font-label-md text-label-md px-2.5 py-0.5 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary inline-block"></span>
+            6 Clients
+          </span>
+</div>
+<div class="flex flex-col my-1">
+<div class="font-headline-xl text-[36px] leading-[44px] font-bold text-on-surface">Rs. 890,000</div>
+<div class="flex items-center gap-1 mt-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-secondary text-base">calendar_today</span>
+<span class="">Expected before Friday Jummah prayer / weekend</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-4 overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 25%"></div>
+</div></div>
+</div>
+<!-- Quick Ledger Section & Filters -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<!-- Filter Bar & Search -->
+<div class="p-space-md md:p-space-lg bg-surface-container-low flex flex-col md:flex-row items-stretch md:items-center justify-between gap-space-md">
+<!-- Filter Tabs -->
+<div class="flex flex-wrap items-center gap-1.5 bg-surface-container-lowest p-1 rounded-xl" id="filter-tabs">
+<button class="filter-btn active-filter px-3 py-1.5 rounded-lg font-label-md text-label-md text-on-primary bg-primary shadow-xs transition-colors" onclick="setFilter('all', this)">
+            All Clients (24)
+          </button>
+<button class="filter-btn px-3 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" onclick="setFilter('overdue', this)">
+            Overdue (4)
+          </button>
+<button class="filter-btn px-3 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" onclick="setFilter('due-soon', this)">
+            Due This Week (6)
+          </button>
+<button class="filter-btn px-3 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" onclick="setFilter('cleared', this)">
+            Fully Paid (14)
+          </button>
+</div>
+<!-- Search Input -->
+<div class="relative min-w-[280px] max-w-md">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-lg">search</span>
+<input class="w-full pl-9 pr-3 py-2 bg-surface-container-lowest text-on-surface rounded-lg font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary shadow-xs placeholder:text-on-surface-variant/60" id="client-search" oninput="searchLedger(this.value)" placeholder="Search client name or phone number..." type="text">
+</div>
+</div>
+<!-- Ledger Table -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left border-collapse min-w-[720px]" id="ledger-table">
+<thead>
+<tr class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-space-md">Client &amp; Contact</th>
+<th class="py-3 px-space-md">Phone Number</th>
+<th class="py-3 px-space-md text-right">Balance Owed</th>
+<th class="py-3 px-space-md">Due Date / Status</th>
+<th class="py-3 px-space-md">Timeline</th>
+<th class="py-3 px-space-md">Last Payment</th>
+<th class="py-3 px-space-md text-center">Instant WhatsApp Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high font-body-md text-body-md"><!-- Row 1: QuickFix -->
+<tr class="ledger-row hover:bg-surface-container-low/50 transition-colors" data-name="quickfix phone repairs mian ali raza" data-phone="03003498821" data-status="overdue">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-error-container text-on-error-container flex items-center justify-center font-label-lg text-label-lg font-bold">
+                    QF
+                  </div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold">QuickFix Phone Repairs</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Attn: Mian Ali Raza</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-1.5 text-on-surface font-medium">
+<span class="">+92 300 3498821</span>
+<button class="p-1 text-on-surface-variant hover:text-primary rounded hover:bg-surface-container transition-colors" onclick="copyPhone('+923003498821', this)" title="Copy Phone Number">
+<span class="material-symbols-outlined text-sm">content_copy</span>
+</button>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<span class="font-headline-sm text-headline-sm font-bold text-error">Rs. 320,000</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="font-medium text-on-surface">Oct 06, 2023</div>
+<div class="text-on-surface-variant font-body-sm text-body-sm">Inv #AP-8841</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                  18 Days Overdue
+                </span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="font-medium text-on-surface">Rs. 150,000</div>
+<div class="text-on-surface-variant font-body-sm text-body-sm">Sep 20 (Cash / Hundi)</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="inline-flex items-center justify-center gap-1.5 bg-[#128C7E] hover:bg-[#075E54] text-white px-3.5 py-2 rounded-lg font-label-md text-label-md shadow-sm transition-all active:scale-[0.98] cursor-pointer" onclick="triggerWhatsAppReminder('Ali Raza bhai', 'QuickFix Phone Repairs', 'Rs. 320,000', '18 days', 'Oct 06')">
+<span class="material-symbols-outlined text-base">chat</span>
+<span class="">Send WhatsApp Reminder</span>
+</button>
+</td>
+</tr>
+<!-- Row 2: Metro Tech Care -->
+<tr class="ledger-row hover:bg-surface-container-low/50 transition-colors" data-name="metro tech care suresh kumar karachi" data-phone="03217741290" data-status="overdue">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-error-container text-on-error-container flex items-center justify-center font-label-lg text-label-lg font-bold">
+                    MT
+                  </div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold">Metro Tech Care</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Attn: Suresh Kumar (Karachi)</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-1.5 text-on-surface font-medium">
+<span class="">+92 321 7741290</span>
+<button class="p-1 text-on-surface-variant hover:text-primary rounded hover:bg-surface-container transition-colors" onclick="copyPhone('+923217741290', this)" title="Copy Phone Number">
+<span class="material-symbols-outlined text-sm">content_copy</span>
+</button>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<span class="font-headline-sm text-headline-sm font-bold text-error">Rs. 485,000</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="font-medium text-on-surface">Oct 12, 2023</div>
+<div class="text-on-surface-variant font-body-sm text-body-sm">Inv #AP-8854</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                  12 Days Overdue
+                </span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="font-medium text-on-surface">Rs. 200,000</div>
+<div class="text-on-surface-variant font-body-sm text-body-sm">Oct 01 (Meezan Bank Transfer)</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="inline-flex items-center justify-center gap-1.5 bg-[#128C7E] hover:bg-[#075E54] text-white px-3.5 py-2 rounded-lg font-label-md text-label-md shadow-sm transition-all active:scale-[0.98] cursor-pointer" onclick="triggerWhatsAppReminder('Suresh Kumar ji', 'Metro Tech Care', 'Rs. 485,000', '12 days', 'Oct 12')">
+<span class="material-symbols-outlined text-base">chat</span>
+<span class="">Send WhatsApp Reminder</span>
+</button>
+</td>
+</tr>
+<!-- Row 3: iHospital Workshop -->
+<tr class="ledger-row hover:bg-surface-container-low/50 transition-colors" data-name="ihospital workshop naveed patel" data-phone="03339024411" data-status="overdue">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-error-container text-on-error-container flex items-center justify-center font-label-lg text-label-lg font-bold">
+                    IH
+                  </div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold">iHospital Workshop</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Attn: Naveed Patel</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-1.5 text-on-surface font-medium">
+<span class="">+92 333 9024411</span>
+<button class="p-1 text-on-surface-variant hover:text-primary rounded hover:bg-surface-container transition-colors" onclick="copyPhone('+923339024411', this)" title="Copy Phone Number">
+<span class="material-symbols-outlined text-sm">content_copy</span>
+</button>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<span class="font-headline-sm text-headline-sm font-bold text-error">Rs. 263,000</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="font-medium text-on-surface">Oct 16, 2023</div>
+<div class="text-on-surface-variant font-body-sm text-body-sm">Inv #AP-8870</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                  8 Days Overdue
+                </span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="font-medium text-on-surface">Rs. 80,000</div>
+<div class="text-on-surface-variant font-body-sm text-body-sm">Oct 02 (JazzCash)</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="inline-flex items-center justify-center gap-1.5 bg-[#128C7E] hover:bg-[#075E54] text-white px-3.5 py-2 rounded-lg font-label-md text-label-md shadow-sm transition-all active:scale-[0.98] cursor-pointer" onclick="triggerWhatsAppReminder('Naveed Patel bhai', 'iHospital Workshop', 'Rs. 263,000', '8 days', 'Oct 16')">
+<span class="material-symbols-outlined text-base">chat</span>
+<span class="">Send WhatsApp Reminder</span>
+</button>
+</td>
+</tr>
+<!-- Row 4: Apex Cellular Booth -->
+<tr class="ledger-row hover:bg-surface-container-low/50 transition-colors" data-name="apex cellular booth farhan akhtar" data-phone="03456128834" data-status="overdue">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-label-lg text-label-lg font-bold">
+                    AC
+                  </div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold">Apex Cellular Booth</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Attn: Farhan Akhtar</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-1.5 text-on-surface font-medium">
+<span class="">+92 345 6128834</span>
+<button class="p-1 text-on-surface-variant hover:text-primary rounded hover:bg-surface-container transition-colors" onclick="copyPhone('+923456128834', this)" title="Copy Phone Number">
+<span class="material-symbols-outlined text-sm">content_copy</span>
+</button>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<span class="font-headline-sm text-headline-sm font-bold text-tertiary">Rs. 180,000</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="font-medium text-on-surface">Oct 19, 2023</div>
+<div class="text-on-surface-variant font-body-sm text-body-sm">Inv #AP-8891</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                  5 Days Overdue
+                </span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="font-medium text-on-surface">Rs. 50,000</div>
+<div class="text-on-surface-variant font-body-sm text-body-sm">Oct 05 (Cash)</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="inline-flex items-center justify-center gap-1.5 bg-[#128C7E] hover:bg-[#075E54] text-white px-3.5 py-2 rounded-lg font-label-md text-label-md shadow-sm transition-all active:scale-[0.98] cursor-pointer" onclick="triggerWhatsAppReminder('Farhan Akhtar bhai', 'Apex Cellular Booth', 'Rs. 180,000', '5 days', 'Oct 19')">
+<span class="material-symbols-outlined text-base">chat</span>
+<span class="">Send WhatsApp Reminder</span>
+</button>
+</td>
+</tr>
+<!-- Row 5: City Tech & Fix -->
+<tr class="ledger-row hover:bg-surface-container-low/50 transition-colors" data-name="city tech &amp; fix marcus waqas vance" data-phone="03012389901" data-status="due-soon">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-secondary-container text-on-secondary-fixed flex items-center justify-center font-label-lg text-label-lg font-bold">
+                    CT
+                  </div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold">City Tech &amp; Fix</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Attn: Marcus / Waqas Vance</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-1.5 text-on-surface font-medium">
+<span class="">+92 301 2389901</span>
+<button class="p-1 text-on-surface-variant hover:text-primary rounded hover:bg-surface-container transition-colors" onclick="copyPhone('+923012389901', this)" title="Copy Phone Number">
+<span class="material-symbols-outlined text-sm">content_copy</span>
+</button>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Rs. 340,000</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="font-medium text-on-surface">Tomorrow (Oct 25)</div>
+<div class="text-on-surface-variant font-body-sm text-body-sm">Inv #AP-8910</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-fixed font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Due Soon
+                </span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="font-medium text-on-surface">Rs. 100,000</div>
+<div class="text-on-surface-variant font-body-sm text-body-sm">Oct 10 (HBL Transfer)</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="inline-flex items-center justify-center gap-1.5 bg-surface-container text-on-surface hover:bg-surface-container-high px-3.5 py-2 rounded-lg font-label-md text-label-md transition-colors cursor-pointer" onclick="triggerWhatsAppReminder('Waqas bhai', 'City Tech &amp; Fix', 'Rs. 340,000', 'tomorrow', 'Oct 25')">
+<span class="material-symbols-outlined text-base text-primary">forum</span>
+<span class="">Send Friendly Reminder</span>
+</button>
+</td>
+</tr>
+<!-- Row 6: Al-Madina Mobile Lab -->
+<tr class="ledger-row hover:bg-surface-container-low/50 transition-colors" data-name="al-madina mobile lab zubair qasim" data-phone="03128812299" data-status="due-soon">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-secondary-container text-on-secondary-fixed flex items-center justify-center font-label-lg text-label-lg font-bold">
+                    AM
+                  </div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold">Al-Madina Mobile Lab</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Attn: Zubair Qasim</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-1.5 text-on-surface font-medium">
+<span class="">+92 312 8812299</span>
+<button class="p-1 text-on-surface-variant hover:text-primary rounded hover:bg-surface-container transition-colors" onclick="copyPhone('+923128812299', this)" title="Copy Phone Number">
+<span class="material-symbols-outlined text-sm">content_copy</span>
+</button>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Rs. 220,000</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="font-medium text-on-surface">Friday (Oct 27)</div>
+<div class="text-on-surface-variant font-body-sm text-body-sm">Inv #AP-8924</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-fixed font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Due Soon
+                </span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="font-medium text-on-surface">Rs. 220,000</div>
+<div class="text-on-surface-variant font-body-sm text-body-sm">Oct 08 (Cross Cheque)</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="inline-flex items-center justify-center gap-1.5 bg-surface-container text-on-surface hover:bg-surface-container-high px-3.5 py-2 rounded-lg font-label-md text-label-md transition-colors cursor-pointer" onclick="triggerWhatsAppReminder('Zubair Qasim bhai', 'Al-Madina Mobile Lab', 'Rs. 220,000', 'this Friday', 'Oct 27')">
+<span class="material-symbols-outlined text-base text-primary">forum</span>
+<span class="">Send Friendly Reminder</span>
+</button>
+</td>
+</tr>
+<!-- Row 7: SmartFix Hub -->
+<tr class="ledger-row hover:bg-surface-container-low/50 transition-colors" data-name="smartfix hub david daniyal chen" data-phone="03344413320" data-status="cleared">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-label-lg text-label-lg font-bold">
+                    SH
+                  </div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold">SmartFix Hub</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Attn: David / Daniyal Chen</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-1.5 text-on-surface font-medium">
+<span class="">+92 334 4413320</span>
+<button class="p-1 text-on-surface-variant hover:text-primary rounded hover:bg-surface-container transition-colors" onclick="copyPhone('+923344413320', this)" title="Copy Phone Number">
+<span class="material-symbols-outlined text-sm">content_copy</span>
+</button>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">Rs. 0 (Paid in Full / Safaya)</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="font-medium text-on-surface">Paid Oct 22</div>
+<div class="text-on-surface-variant font-body-sm text-body-sm">Settled Clean</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                  Cleared
+                </span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="font-medium text-on-surface">Rs. 310,000</div>
+<div class="text-on-surface-variant font-body-sm text-body-sm">Oct 22 (Full Bank Settlement)</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="font-label-md text-label-md text-on-surface-variant/60 flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-sm text-primary">check_circle</span>
+                  No balance
+                </span>
+</td>
+</tr></tbody>
+</table>
+</div>
+<!-- Ledger Summary Bar -->
+<div class="p-space-md bg-surface-container flex flex-col sm:flex-row items-center justify-between text-on-surface gap-space-sm font-label-md text-label-md">
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="">Showing 7 of 24 wholesale accounts</span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span class="text-error font-semibold">4 overdue accounts require follow-up</span>
+</div>
+<div class="flex items-center gap-space-md"><button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container-high transition-colors font-label-md text-label-md text-on-surface flex items-center gap-1 cursor-pointer">
+<span class="material-symbols-outlined text-sm">print</span> Print Khata Statement
+          </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container-high transition-colors font-label-md text-label-md text-on-surface flex items-center gap-1 cursor-pointer">
+<span class="material-symbols-outlined text-sm">download</span> Export to Excel
+          </button></div>
+</div>
+</div>
+<!-- WhatsApp Message Explanation & Preview Callout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-sm items-center">
+<div class="lg:col-span-5 flex flex-col gap-2">
+<div class="flex items-center gap-space-xs text-[#128C7E]">
+<span class="material-symbols-outlined text-2xl">mark_chat_unread</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">How WhatsApp Reminders Work</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Clicking the green button opens WhatsApp instantly with a polite, professional message already drafted. No re-typing invoices or balances needed.
+        </p>
+<div class="flex items-center gap-space-md mt-2">
+<div class="flex items-center gap-1 font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-primary text-base">verified</span>
+            Includes Exact Balance
+          </div>
+<div class="flex items-center gap-1 font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-primary text-base">verified</span>
+            No Software Fee
+          </div>
+</div>
+</div>
+<div class="lg:col-span-7 bg-[#EFEAE2] p-space-md rounded-xl relative shadow-inner">
+<div class="flex items-center justify-between border-b pb-2 mb-3 border-[#000000]/10">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-[#128C7E] flex items-center justify-center text-white text-xs font-bold">AP</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">ApexParts WhatsApp Template Preview</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Live Preview</span>
+</div>
+<!-- Chat Bubble -->
+<div class="bg-white p-space-md rounded-xl max-w-xl shadow-sm text-[#111B21] flex flex-col gap-1.5 ml-auto">
+<div class="font-body-sm text-body-sm leading-relaxed" id="preview-text">“Assalam-o-Alaikum <span class="font-bold text-on-surface">Ali Raza bhai</span> (<span class="text-on-surface-variant">QuickFix Phone Repairs</span>), this is Rashid Khan from ApexParts Wholesale Hall Road. Friendly reminder that your khata balance of <span class="font-bold text-error">Rs. 320,000</span> was due <span class="font-bold text-error">18 days ago</span>. Kindly transfer via Meezan Bank or EasyPaisa/Cash and share the slip/screenshot. JazakAllah for your business!”</div>
+<div class="flex items-center justify-end gap-1 text-[10px] text-on-surface-variant self-end pt-1">
+<span class="">Just now</span>
+<span class="material-symbols-outlined text-xs text-[#53BDEB]">done_all</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Toast Notification -->
+<div class="fixed bottom-6 right-6 bg-inverse-surface text-inverse-on-surface px-space-md py-3 rounded-xl shadow-xl flex items-center gap-space-sm transform translate-y-24 opacity-0 transition-all duration-300 z-50" id="toast">
+<span class="material-symbols-outlined text-primary-fixed" id="toast-icon">check_circle</span>
+<span class="font-label-md text-label-md" id="toast-message">Copied to clipboard</span>
+</div>
+<!-- Record Payment Simple Modal -->
+<div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-xs hidden items-center justify-center z-50 p-4" id="payment-modal">
+<div class="bg-surface-container-lowest rounded-xl max-w-md w-full p-space-lg shadow-2xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl">payments</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Record Received Payment</h3>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface p-1 rounded" onclick="closePaymentModal()">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Select Client</label>
+<select class="w-full bg-surface-container-low px-3 py-2 rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary">
+<option>QuickFix Phone Repairs ($3,200 owed)</option>
+<option>Metro Tech Care ($4,850 owed)</option>
+<option>iHospital Workshop ($2,630 owed)</option>
+<option>Apex Cellular Booth ($1,800 owed)</option>
+<option>City Tech &amp; Fix ($3,400 owed)</option>
+</select>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Amount Paid ($)</label>
+<input class="w-full bg-surface-container-low px-3 py-2 rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary" placeholder="0.00" type="number">
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Payment Method</label>
+<select class="w-full bg-surface-container-low px-3 py-2 rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary">
+<option>Cash in Hand</option>
+<option>Bank Wire / Transfer</option>
+<option>Cheque</option>
+<option>Credit / Debit Card</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Deposit To Location</label>
+<div class="flex gap-2">
+<label class="flex items-center gap-1.5 text-body-sm font-body-sm text-on-surface">
+<input checked="" class="text-primary focus:ring-primary" name="loc" type="radio"> Central Warehouse
+            </label>
+<label class="flex items-center gap-1.5 text-body-sm font-body-sm text-on-surface">
+<input class="text-primary focus:ring-primary" name="loc" type="radio"> Shop 1 Downtown
+            </label>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-2">
+<button class="px-4 py-2 font-label-md text-label-md text-on-surface-variant hover:bg-surface-container rounded-lg" onclick="closePaymentModal()">Cancel</button>
+<button class="px-5 py-2 font-label-lg text-label-lg bg-primary text-on-primary hover:bg-primary-container rounded-lg shadow-sm" onclick="savePayment()">Save &amp; Update Balance</button>
+</div>
+</div>
+</div>
+<script>
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      const text = document.getElementById('toast-message');
+      text.innerText = msg;
+      toast.classList.remove('translate-y-24', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-24', 'opacity-0');
+      }, 3000);
+    }
+
+    function copyPhone(phone, btn) {
+      navigator.clipboard.writeText(phone).then(() => {
+        showToast('Phone number ' + phone + ' copied!');
+      }).catch(() => {
+        showToast('Copied: ' + phone);
+      });
+    }
+
+    function triggerWhatsAppReminder(contact, shop, amount, dueText, dueDate) {
+      const preview = document.getElementById('preview-text');
+      if (preview) {
+        preview.innerHTML = `&ldquo;Hello <span class="font-bold text-on-surface">${contact}</span> (<span class="text-on-surface-variant">${shop}</span>), this is ApexParts Wholesale. Friendly reminder that your balance of <span class="font-bold text-error">$${amount}</span> was due <span class="font-bold text-error">${dueText}</span> (${dueDate}). Please send your payment receipt once transferred. Thank you for your continued business!&rdquo;`;
+      }
+      showToast('Opening WhatsApp reminder for ' + contact + '...');
+    }
+
+    function setFilter(category, clickedBtn) {
+      const buttons = document.querySelectorAll('.filter-btn');
+      buttons.forEach(b => {
+        b.className = 'filter-btn px-3 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors';
+      });
+      clickedBtn.className = 'filter-btn active-filter px-3 py-1.5 rounded-lg font-label-md text-label-md text-on-primary bg-primary shadow-xs transition-colors';
+
+      const rows = document.querySelectorAll('.ledger-row');
+      rows.forEach(row => {
+        if (category === 'all') {
+          row.style.display = '';
+        } else if (row.getAttribute('data-status') === category) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    }
+
+    function searchLedger(query) {
+      const q = query.toLowerCase().trim();
+      const rows = document.querySelectorAll('.ledger-row');
+      rows.forEach(row => {
+        const name = row.getAttribute('data-name') || '';
+        const phone = row.getAttribute('data-phone') || '';
+        if (name.includes(q) || phone.includes(q)) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    }
+
+    function openPaymentModal() {
+      const m = document.getElementById('payment-modal');
+      m.classList.remove('hidden');
+      m.classList.add('flex');
+    }
+
+    function closePaymentModal() {
+      const m = document.getElementById('payment-modal');
+      m.classList.remove('flex');
+      m.classList.add('hidden');
+    }
+
+    function savePayment() {
+      closePaymentModal();
+      showToast('Payment successfully logged & balance updated!');
+    }
+  </script>
+</div></main><nav class="lg:hidden fixed bottom-0 left-0 right-0 h-16 bg-surface-container-lowest border-t border-outline-variant/30 flex items-center justify-around z-40 px-2 shadow-lg"><a href="#" class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary gap-0.5"><span class="material-symbols-outlined text-xl">dashboard</span><span class="font-label-sm text-[11px]">Dashboard</span></a><a href="#" class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary gap-0.5"><span class="material-symbols-outlined text-xl">inventory_2</span><span class="font-label-sm text-[11px]">Inventory</span></a><a href="#" class="flex flex-col items-center justify-center text-primary font-bold gap-0.5"><span class="material-symbols-outlined text-xl">payments</span><span class="font-label-sm text-[11px]">Payments</span></a><a href="#" class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary gap-0.5"><span class="material-symbols-outlined text-xl">bar_chart</span><span class="font-label-sm text-[11px]">Reports</span></a></nav></div>
+
+</body></html>

@@ -1,0 +1,48 @@
+/*
+  Design tokens pulled from the Stitch export's DESIGN.md.
+  These become real Tailwind utilities (bg-primary, text-ink-muted, etc.)
+  via Tailwind v4's CSS-first @theme config — no tailwind.config.js needed.
+*/
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+  /* Text */
+  --color-ink: #0f172a;
+  --color-ink-muted: #64748b;
+  --color-ink-faint: #94a3b8;
+
+  /* Brand */
+  --color-primary: #0f766e;
+  --color-primary-hover: #0d9488;
+  --color-primary-active: #115e59;
+  --color-primary-soft: #ccfbf1;
+  --color-on-primary: #ffffff;
+
+  --color-tertiary: #d97706;
+  --color-tertiary-soft: #fef3c7;
+
+  /* Surfaces */
+  --color-canvas: #f1f5f9;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f8fafc;
+  --color-surface-hover: #f1f5f9;
+
+  --color-border: #e2e8f0;
+  --color-border-strong: #cbd5e1;
+
+  /* Operational status */
+  --color-positive: #16a34a;
+  --color-positive-text: #15803d;
+  --color-positive-bg: #dcfce7;
+
+  --color-warning: #d97706;
+  --color-warning-text: #b45309;
+  --color-warning-bg: #fef3c7;
+
+  --color-critical: #dc2626;
+  --color-critical-text: #b91c1c;
+  --color-critical-bg: #fee2e2;
+
+  --color-draft: #475569;
+  --color-draft-bg: #f1f5f9;
+}
